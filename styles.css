@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 70px; /* 为固定导航栏留出空间 */
+}
+
+.navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+    object-fit: contain; /* 确保logo保持其比例 */
+}
+
+.hero {
+    background-image: url('images/hero-bg.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about, .enrollment, .contact {
+    padding: 60px 0;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+#map {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    background-color: rgba(248, 249, 250, 0.35) !important; /* 35% 不透明度的浅灰色背景 */
+    backdrop-filter: blur(5px); /* 添加模糊效果以提高可读性 */
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1; /* 确保内容在导航栏下方 */
+}
